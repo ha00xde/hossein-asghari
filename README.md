@@ -1,21 +1,30 @@
-# Hossein Asghari — Personal Portfolio
+# پرتفولیوی شخصی حسین اصغری
 
-Static one-page portfolio built with HTML, CSS and vanilla JavaScript.
+نسخه فارسی، RTL، Mobile‑First و تک‌صفحه‌ای.
 
-## Publish with GitHub Pages
+## فایل‌ها
+- `index.html`
+- `style.css`
+- `script.js`
+- `.nojekyll`
 
-1. Create a new GitHub repository (for example: `hossein-portfolio`).
-2. Upload `index.html`, `style.css` and `script.js` to the repository root.
-3. Open the repository **Settings**.
-4. Go to **Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select branch `main` and folder `/(root)`.
-7. Save.
+## انتشار در GitHub Pages
 
-Your site will be available at:
+1. در GitHub یک Repository جدید بساز.
+2. اسم پیشنهادی: `portfolio`
+3. حالت Repository را روی **Public** بگذار.
+4. فایل‌های این پوشه را مستقیماً در ریشه Repository آپلود کن.
+5. به **Settings → Pages** برو.
+6. در **Build and deployment** گزینه **Deploy from a branch** را انتخاب کن.
+7. Branch را روی `main` و Folder را روی `/(root)` بگذار.
+8. Save را بزن.
 
-`https://YOUR-USERNAME.github.io/hossein-portfolio/`
+آدرس سایت:
+`https://USERNAME.github.io/portfolio/`
 
-If the repository is named exactly `YOUR-USERNAME.github.io`, the address becomes:
+### آدرس کوتاه‌تر
+اگر Repository را دقیقاً با نام `USERNAME.github.io` بسازی:
+`https://USERNAME.github.io/`
 
-`https://YOUR-USERNAME.github.io/`
+## نکته
+همه بخش‌ها در یک فایل HTML و در یک صفحه هستند. لینک‌های داخلی فقط کاربر را به قسمت مربوطه اسکرول می‌کنند.

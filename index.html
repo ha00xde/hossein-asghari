@@ -1,69 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Hossein Asghari — Embedded Developer and Human Resources Manager." />
-  <title>Hossein Asghari | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#050914" />
+  <meta name="description" content="وب‌سایت شخصی حسین اصغری؛ مدیر منابع انسانی و توسعه‌دهنده سیستم‌های نهفته." />
+  <title>حسین اصغری | رزومه و مسیر حرفه‌ای</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="space"></canvas>
-  <div class="noise"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
+  <canvas id="space" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <header class="nav">
-    <a class="brand" href="#home" aria-label="Home">
+  <header class="topbar">
+    <a href="#home" class="brand" aria-label="صفحه اصلی">
       <span>H</span><span>A</span>
     </a>
 
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#journey">Journey</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
+    <nav class="desktop-nav" aria-label="ناوبری اصلی">
+      <a href="#about">درباره من</a>
+      <a href="#journey">مسیر حرفه‌ای</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#experience">سوابق</a>
     </nav>
 
-    <a class="nav-cta" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
-      LinkedIn ↗
+    <a class="top-cta" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
+      لینکدین ↗
     </a>
   </header>
 
   <main>
     <section class="hero section" id="home">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span></span> HELLO, I'M</div>
+        <div class="eyebrow"><span></span> سلام، من هستم</div>
 
         <h1>
-          <span>HOSSEIN</span>
-          <span class="gradient-text">ASGHARI</span>
+          <span>حسین</span>
+          <span class="gradient-text">اصغری</span>
         </h1>
 
         <div class="roles">
-          <span>Embedded Developer</span>
+          <span>توسعه‌دهنده سیستم‌های نهفته</span>
           <b>×</b>
-          <span>Human Resources Manager</span>
+          <span>مدیر منابع انسانی</span>
         </div>
 
         <p class="hero-text">
-          I connect <strong>technology</strong>, <strong>finance</strong>, and <strong>people</strong>
-          to build smarter, more efficient organizations.
+          مسیر حرفه‌ای من از <strong>فناوری</strong> شروع شد، از <strong>مالی و حسابداری</strong> عبور کرد
+          و امروز در <strong>منابع انسانی و مدیریت عملیات</strong> ادامه دارد.
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary" href="#journey">Explore my journey <span>↓</span></a>
+          <a class="btn primary" href="#journey">مسیر من را ببین <span>↓</span></a>
           <a class="btn ghost" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
-            Connect on LinkedIn
+            مشاهده لینکدین
           </a>
         </div>
 
-        <div class="mini-stats">
-          <div><strong>10+</strong><span>Years of multi-field experience</span></div>
-          <div><strong>3</strong><span>Career domains</span></div>
-          <div><strong>1</strong><span>Connected perspective</span></div>
+        <div class="quick-pills">
+          <a href="#exp-tech">فناوری</a>
+          <a href="#exp-finance">مالی</a>
+          <a href="#exp-hr">منابع انسانی</a>
+          <a href="#exp-current">مدیریت</a>
         </div>
       </div>
 
@@ -72,6 +76,7 @@
           <div class="orbit orbit-a"></div>
           <div class="orbit orbit-b"></div>
           <div class="orbit orbit-c"></div>
+
           <div class="orb-core">
             <span class="orb-label label-tech">TECH</span>
             <span class="orb-label label-finance">FINANCE</span>
@@ -83,12 +88,12 @@
         <div class="terminal glass">
           <div class="terminal-top">
             <span></span><span></span><span></span>
-            <small>portfolio.sh</small>
+            <small>profile.sh</small>
           </div>
-          <div class="terminal-body">
+          <div class="terminal-body" dir="ltr">
             <div><em>$</em> whoami</div>
             <p>Hossein Asghari</p>
-            <div><em>$</em> background</div>
+            <div><em>$</em> journey</div>
             <p>Technology → Finance → People</p>
             <div><em>$</em> mission</div>
             <p id="typeLine"></p>
@@ -97,190 +102,252 @@
         </div>
       </div>
 
-      <div class="scroll-mark">SCROLL <span>↓</span></div>
+      <div class="scroll-indicator">
+        <span>برای ادامه اسکرول کنید</span>
+        <b>⌄</b>
+      </div>
     </section>
 
     <section class="section about" id="about">
       <div class="section-head reveal">
-        <div class="eyebrow"><span></span> ABOUT ME</div>
-        <h2>From <span class="gradient-text">Technology</span><br>to <span class="pink">People</span></h2>
+        <div class="eyebrow"><span></span> درباره من</div>
+        <h2>از <span class="gradient-text">فناوری</span><br>تا <span class="pink">مدیریت انسان‌ها</span></h2>
       </div>
 
       <div class="about-grid">
-        <div class="about-copy glass reveal">
+        <article class="about-copy glass reveal">
           <p>
-            My career started in tech and programming. I later moved into accounting and financial analysis,
-            before transitioning into HR and operations management.
+            فعالیت حرفه‌ای من با تکنولوژی، برنامه‌نویسی و سیستم‌های نهفته آغاز شد.
+            پس از آن وارد حسابداری و تحلیل مالی شدم و در ادامه مسیر حرفه‌ای خود را
+            به حوزه منابع انسانی و مدیریت عملیات توسعه دادم.
           </p>
           <p>
-            That multidisciplinary background helps me connect the dots between systems, data, budgets and people —
-            and turn them into clearer, more efficient organizational processes.
+            این تجربه چندرشته‌ای به من کمک می‌کند مسائل سازمان را فقط از یک زاویه نبینم؛
+            بلکه فناوری، داده، بودجه، فرآیند و نیروی انسانی را کنار هم قرار دهم.
           </p>
-          <div class="quote">“Different disciplines. One systems mindset.”</div>
-        </div>
+          <div class="quote">«چند تخصص متفاوت، با یک نگاه سیستمی مشترک.»</div>
+        </article>
 
         <div class="domains">
-          <article class="domain-card reveal" data-tilt>
+          <a class="domain-card reveal clickable" href="#exp-tech" data-tilt>
+            <div class="domain-arrow">↙</div>
             <div class="icon">⌘</div>
-            <h3>Technology</h3>
-            <p>Embedded systems, C programming, electronics and technical problem solving.</p>
-          </article>
+            <h3>فناوری</h3>
+            <p>سیستم‌های نهفته، برنامه‌نویسی C، الکترونیک و حل مسئله فنی.</p>
+            <span class="card-link">مشاهده سابقه مرتبط</span>
+          </a>
 
-          <article class="domain-card reveal" data-tilt>
+          <a class="domain-card reveal clickable" href="#exp-finance" data-tilt>
+            <div class="domain-arrow">↙</div>
             <div class="icon">◫</div>
-            <h3>Finance & Data</h3>
-            <p>Accounting, financial analysis, budgets and data-informed decision making.</p>
-          </article>
+            <h3>مالی و داده</h3>
+            <p>حسابداری، تحلیل مالی و درک ارتباط اعداد با تصمیم‌های سازمانی.</p>
+            <span class="card-link">مشاهده سابقه مرتبط</span>
+          </a>
 
-          <article class="domain-card reveal" data-tilt>
+          <a class="domain-card reveal clickable" href="#exp-hr" data-tilt>
+            <div class="domain-arrow">↙</div>
             <div class="icon">◎</div>
-            <h3>People</h3>
-            <p>Human resources, talent, people operations and organizational development.</p>
-          </article>
+            <h3>منابع انسانی</h3>
+            <p>عملیات منابع انسانی، مدیریت استعداد و توسعه فرآیندهای منابع انسانی.</p>
+            <span class="card-link">مشاهده سابقه مرتبط</span>
+          </a>
 
-          <article class="domain-card reveal" data-tilt>
+          <a class="domain-card reveal clickable" href="#exp-current" data-tilt>
+            <div class="domain-arrow">↙</div>
             <div class="icon">⚙</div>
-            <h3>Operations</h3>
-            <p>Process improvement, administration and cross-functional coordination.</p>
-          </article>
+            <h3>مدیریت و عملیات</h3>
+            <p>بهبود فرآیند، هماهنگی بین‌واحدی و نگاه سیستمی به سازمان.</p>
+            <span class="card-link">مشاهده سابقه مرتبط</span>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="section journey" id="journey">
       <div class="section-head reveal">
-        <div class="eyebrow"><span></span> MY JOURNEY</div>
-        <h2>A career built by <span class="gradient-text">connecting worlds.</span></h2>
+        <div class="eyebrow"><span></span> مسیر حرفه‌ای</div>
+        <h2>یک مسیر غیرخطی، با <span class="gradient-text">منطق مشخص.</span></h2>
       </div>
 
-      <div class="timeline">
-        <div class="timeline-line"></div>
+      <div class="journey-flow">
+        <a href="#exp-smart" class="journey-step reveal">
+          <span class="step-no">01</span>
+          <small>۱۳۹۵ تا ۱۳۹۷</small>
+          <strong>شبکه و مدارس هوشمند</strong>
+          <p>شروع مسیر حرفه‌ای در حوزه زیرساخت و فناوری.</p>
+        </a>
 
-        <article class="timeline-item reveal">
-          <div class="dot"></div>
-          <div class="year">2016 — 2018</div>
-          <h3>Smart Schools & Networks</h3>
-          <p>FSR Co · Network administration, CCTV installation and smart-school systems.</p>
-        </article>
+        <a href="#exp-tech" class="journey-step reveal">
+          <span class="step-no">02</span>
+          <small>۱۳۹۷ تا ۱۴۰۱</small>
+          <strong>توسعه سیستم‌های نهفته</strong>
+          <p>برنامه‌نویسی، الکترونیک و پروژه‌های Embedded.</p>
+        </a>
 
-        <article class="timeline-item reveal">
-          <div class="dot"></div>
-          <div class="year">2018 — 2019</div>
-          <h3>Embedded Developer</h3>
-          <p>MPC · C programming, electronics and embedded-system development.</p>
-        </article>
+        <a href="#exp-finance" class="journey-step reveal">
+          <span class="step-no">03</span>
+          <small>۱۴۰۱ تا ۱۴۰۳</small>
+          <strong>حسابداری و مالی</strong>
+          <p>ورود به فضای مالی و شناخت فرآیندهای کسب‌وکار.</p>
+        </a>
 
-        <article class="timeline-item reveal">
-          <div class="dot"></div>
-          <div class="year">2019 — 2022</div>
-          <h3>Embedded Developer</h3>
-          <p>Iran SMPS · Embedded development and technical projects.</p>
-        </article>
+        <a href="#exp-hr" class="journey-step reveal">
+          <span class="step-no">04</span>
+          <small>۱۴۰۳ تا ۱۴۰۴</small>
+          <strong>منابع انسانی</strong>
+          <p>تمرکز بر فرآیندهای انسانی و عملیات سازمانی.</p>
+        </a>
 
-        <article class="timeline-item reveal">
-          <div class="dot"></div>
-          <div class="year">2022 — 2024</div>
-          <h3>Accounting</h3>
-          <p>Sakab Investment · Accounting and financial operations.</p>
-        </article>
-
-        <article class="timeline-item reveal">
-          <div class="dot"></div>
-          <div class="year">2024 — 2025</div>
-          <h3>Human Resources Specialist</h3>
-          <p>Sakab Investment · HR operations and people-related processes.</p>
-        </article>
-
-        <article class="timeline-item reveal current">
-          <div class="dot"></div>
-          <div class="year">2025 — Present</div>
-          <h3>Human Resources Manager</h3>
-          <p>Arzeshmandegar · HR management and organizational operations.</p>
-        </article>
+        <a href="#exp-current" class="journey-step reveal current">
+          <span class="step-no">05</span>
+          <small>۱۴۰۴ تا امروز</small>
+          <strong>مدیریت منابع انسانی</strong>
+          <p>ترکیب تجربه فناوری، مالی و منابع انسانی در سطح مدیریتی.</p>
+        </a>
       </div>
     </section>
 
     <section class="section skills" id="skills">
       <div class="section-head reveal">
-        <div class="eyebrow"><span></span> SKILLS & EXPERTISE</div>
-        <h2>One profile. <span class="gradient-text">Four dimensions.</span></h2>
+        <div class="eyebrow"><span></span> مهارت‌ها</div>
+        <h2>یک پروفایل، <span class="gradient-text">چهار بُعد.</span></h2>
       </div>
 
       <div class="skills-grid">
-        <article class="skill-panel glass reveal">
-          <div class="skill-top"><span>01</span><h3>Technology & Development</h3></div>
-          <p>Embedded systems, low-level thinking and technical problem solving.</p>
+        <a class="skill-panel glass reveal clickable" href="#exp-tech">
+          <div class="skill-top"><span>01</span><h3>فناوری و توسعه</h3></div>
+          <p>تجربه عملی در سیستم‌های نهفته، برنامه‌نویسی و الکترونیک.</p>
           <div class="chips"><span>C</span><span>Embedded Systems</span><span>Electronics</span><span>VS Code</span></div>
-        </article>
+        </a>
 
-        <article class="skill-panel glass reveal">
-          <div class="skill-top"><span>02</span><h3>Finance & Data</h3></div>
-          <p>Understanding numbers as part of the business system, not in isolation.</p>
-          <div class="chips"><span>Accounting</span><span>Financial Analysis</span><span>Budgeting</span><span>Data</span></div>
-        </article>
+        <a class="skill-panel glass reveal clickable" href="#exp-finance">
+          <div class="skill-top"><span>02</span><h3>مالی و داده</h3></div>
+          <p>شناخت حسابداری و تحلیل مالی با نگاه کاربردی به کسب‌وکار.</p>
+          <div class="chips"><span>Accounting</span><span>Financial Analysis</span><span>Budget</span><span>Data</span></div>
+        </a>
 
-        <article class="skill-panel glass reveal">
-          <div class="skill-top"><span>03</span><h3>People & HR</h3></div>
-          <p>Designing better employee experiences and more effective HR operations.</p>
+        <a class="skill-panel glass reveal clickable" href="#exp-hr">
+          <div class="skill-top"><span>03</span><h3>منابع انسانی</h3></div>
+          <p>مدیریت منابع انسانی، عملیات پرسنلی و توسعه فرآیندهای سازمانی.</p>
           <div class="chips"><span>HR Management</span><span>People Ops</span><span>Recruitment</span><span>Talent</span></div>
-        </article>
+        </a>
 
-        <article class="skill-panel glass reveal">
-          <div class="skill-top"><span>04</span><h3>Operations & Management</h3></div>
-          <p>Connecting people, process and execution across organizational functions.</p>
+        <a class="skill-panel glass reveal clickable" href="#exp-current">
+          <div class="skill-top"><span>04</span><h3>مدیریت و عملیات</h3></div>
+          <p>بهبود فرآیند، هماهنگی بین واحدها و حل مسئله سازمانی.</p>
           <div class="chips"><span>Process Improvement</span><span>Administration</span><span>Coordination</span></div>
-        </article>
+        </a>
       </div>
     </section>
 
     <section class="section experience" id="experience">
       <div class="section-head reveal">
-        <div class="eyebrow"><span></span> EXPERIENCE</div>
-        <h2>Built across <span class="gradient-text">different systems.</span></h2>
+        <div class="eyebrow"><span></span> سوابق حرفه‌ای</div>
+        <h2>تجربه‌هایی از <span class="gradient-text">چند دنیای متفاوت.</span></h2>
       </div>
 
       <div class="experience-list">
-        <article class="exp-row reveal">
-          <div class="exp-index">01</div>
-          <div><strong>Arzeshmandegar</strong><span>Human Resources Manager</span></div>
-          <div class="exp-date">Jul 2025 — Present</div>
+        <article class="exp-card reveal current-exp" id="exp-current">
+          <div class="exp-glow"></div>
+          <div class="exp-number">05</div>
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <div>
+                <small>از تیر ۱۴۰۴ تاکنون</small>
+                <h3>مدیر منابع انسانی</h3>
+                <strong>Arzeshmandegar</strong>
+              </div>
+              <span class="status">اکنون</span>
+            </div>
+            <p>مدیریت منابع انسانی، بهبود فرآیندهای سازمانی و هماهنگی فعالیت‌های مرتبط با سرمایه انسانی و عملیات.</p>
+            <div class="tags"><span>HR Management</span><span>People Operations</span><span>Process</span></div>
+          </div>
         </article>
-        <article class="exp-row reveal">
-          <div class="exp-index">02</div>
-          <div><strong>Sakab Investment</strong><span>HR Specialist · Accountant</span></div>
-          <div class="exp-date">Aug 2022 — Aug 2025</div>
+
+        <article class="exp-card reveal" id="exp-hr">
+          <div class="exp-number">04</div>
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <div>
+                <small>تیر ۱۴۰۳ تا مرداد ۱۴۰۴</small>
+                <h3>کارشناس منابع انسانی</h3>
+                <strong>Sakab Investment</strong>
+              </div>
+            </div>
+            <p>فعالیت در حوزه منابع انسانی و آشنایی عمیق‌تر با فرآیندهای سازمانی و سرمایه انسانی.</p>
+            <div class="tags"><span>HR</span><span>People Ops</span><span>Organization</span></div>
+          </div>
         </article>
-        <article class="exp-row reveal">
-          <div class="exp-index">03</div>
-          <div><strong>Iran SMPS</strong><span>Embedded Developer</span></div>
-          <div class="exp-date">Jul 2019 — Aug 2022</div>
+
+        <article class="exp-card reveal" id="exp-finance">
+          <div class="exp-number">03</div>
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <div>
+                <small>مرداد ۱۴۰۱ تا تیر ۱۴۰۳</small>
+                <h3>حسابدار</h3>
+                <strong>Sakab Investment</strong>
+              </div>
+            </div>
+            <p>تجربه حسابداری و فعالیت در فضای مالی؛ پلی میان نگاه فنی و درک کسب‌وکار.</p>
+            <div class="tags"><span>Accounting</span><span>Finance</span><span>Analysis</span></div>
+          </div>
         </article>
-        <article class="exp-row reveal">
-          <div class="exp-index">04</div>
-          <div><strong>MPC</strong><span>Embedded Developer</span></div>
-          <div class="exp-date">Jul 2018 — Jul 2019</div>
+
+        <article class="exp-card reveal" id="exp-tech">
+          <div class="exp-number">02</div>
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <div>
+                <small>۱۳۹۷ تا ۱۴۰۱</small>
+                <h3>توسعه‌دهنده سیستم‌های نهفته</h3>
+                <strong>MPC · Iran SMPS</strong>
+              </div>
+            </div>
+            <p>توسعه سیستم‌های Embedded، برنامه‌نویسی C، الکترونیک و حل مسئله در پروژه‌های فنی.</p>
+            <div class="tags"><span>C</span><span>Embedded</span><span>Electronics</span></div>
+          </div>
         </article>
-        <article class="exp-row reveal">
-          <div class="exp-index">05</div>
-          <div><strong>FSR Co</strong><span>Smart Schools & Networks</span></div>
-          <div class="exp-date">Mar 2016 — Jul 2018</div>
+
+        <article class="exp-card reveal" id="exp-smart">
+          <div class="exp-number">01</div>
+          <div class="exp-main">
+            <div class="exp-title-row">
+              <div>
+                <small>۱۳۹۵ تا ۱۳۹۷</small>
+                <h3>تجهیز مدارس هوشمند</h3>
+                <strong>FSR Co</strong>
+              </div>
+            </div>
+            <p>فعالیت در حوزه شبکه، نصب CCTV و اجرای تجهیزات مدارس هوشمند.</p>
+            <div class="tags"><span>Network</span><span>CCTV</span><span>Infrastructure</span></div>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="section contact">
+    <section class="section contact" id="contact">
       <div class="contact-card glass reveal">
         <div>
-          <div class="eyebrow"><span></span> LET'S CONNECT</div>
-          <h2>Interested in building<br><span class="gradient-text">something meaningful?</span></h2>
-          <p>Technology, people, operations, organizational development — or a mix of all four.</p>
+          <div class="eyebrow"><span></span> ارتباط با من</div>
+          <h2>برای همکاری یا گفت‌وگوی حرفه‌ای،<br><span class="gradient-text">در ارتباط باشیم.</span></h2>
+          <p>فناوری، منابع انسانی، مدیریت عملیات و توسعه سازمانی؛ موضوعاتی هستند که همیشه برای گفت‌وگو درباره‌شان آماده‌ام.</p>
         </div>
         <a class="btn primary big" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
-          Connect on LinkedIn ↗
+          ارتباط در LinkedIn ↗
         </a>
       </div>
     </section>
   </main>
+
+  <nav class="mobile-dock" aria-label="ناوبری موبایل">
+    <a href="#home"><span>⌂</span><small>خانه</small></a>
+    <a href="#about"><span>◌</span><small>درباره</small></a>
+    <a href="#journey"><span>↯</span><small>مسیر</small></a>
+    <a href="#experience"><span>▦</span><small>سوابق</small></a>
+    <a href="#contact"><span>↗</span><small>ارتباط</small></a>
+  </nav>
 
   <footer>
     <span>© 2026 Hossein Asghari</span>
