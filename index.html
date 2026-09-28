@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hossein Asghari — Embedded Developer and Human Resources Manager." />
+  <title>Hossein Asghari | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="space"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Home">
+      <span>H</span><span>A</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+    </nav>
+
+    <a class="nav-cta" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
+      LinkedIn ↗
+    </a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> HELLO, I'M</div>
+
+        <h1>
+          <span>HOSSEIN</span>
+          <span class="gradient-text">ASGHARI</span>
+        </h1>
+
+        <div class="roles">
+          <span>Embedded Developer</span>
+          <b>×</b>
+          <span>Human Resources Manager</span>
+        </div>
+
+        <p class="hero-text">
+          I connect <strong>technology</strong>, <strong>finance</strong>, and <strong>people</strong>
+          to build smarter, more efficient organizations.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#journey">Explore my journey <span>↓</span></a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
+            Connect on LinkedIn
+          </a>
+        </div>
+
+        <div class="mini-stats">
+          <div><strong>10+</strong><span>Years of multi-field experience</span></div>
+          <div><strong>3</strong><span>Career domains</span></div>
+          <div><strong>1</strong><span>Connected perspective</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orb-wrap" id="orbWrap">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="orbit orbit-c"></div>
+          <div class="orb-core">
+            <span class="orb-label label-tech">TECH</span>
+            <span class="orb-label label-finance">FINANCE</span>
+            <span class="orb-label label-people">PEOPLE</span>
+            <div class="ha-mark">HA</div>
+          </div>
+        </div>
+
+        <div class="terminal glass">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <small>portfolio.sh</small>
+          </div>
+          <div class="terminal-body">
+            <div><em>$</em> whoami</div>
+            <p>Hossein Asghari</p>
+            <div><em>$</em> background</div>
+            <p>Technology → Finance → People</p>
+            <div><em>$</em> mission</div>
+            <p id="typeLine"></p>
+            <span class="terminal-caret"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-mark">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span></span> ABOUT ME</div>
+        <h2>From <span class="gradient-text">Technology</span><br>to <span class="pink">People</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy glass reveal">
+          <p>
+            My career started in tech and programming. I later moved into accounting and financial analysis,
+            before transitioning into HR and operations management.
+          </p>
+          <p>
+            That multidisciplinary background helps me connect the dots between systems, data, budgets and people —
+            and turn them into clearer, more efficient organizational processes.
+          </p>
+          <div class="quote">“Different disciplines. One systems mindset.”</div>
+        </div>
+
+        <div class="domains">
+          <article class="domain-card reveal" data-tilt>
+            <div class="icon">⌘</div>
+            <h3>Technology</h3>
+            <p>Embedded systems, C programming, electronics and technical problem solving.</p>
+          </article>
+
+          <article class="domain-card reveal" data-tilt>
+            <div class="icon">◫</div>
+            <h3>Finance & Data</h3>
+            <p>Accounting, financial analysis, budgets and data-informed decision making.</p>
+          </article>
+
+          <article class="domain-card reveal" data-tilt>
+            <div class="icon">◎</div>
+            <h3>People</h3>
+            <p>Human resources, talent, people operations and organizational development.</p>
+          </article>
+
+          <article class="domain-card reveal" data-tilt>
+            <div class="icon">⚙</div>
+            <h3>Operations</h3>
+            <p>Process improvement, administration and cross-functional coordination.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span></span> MY JOURNEY</div>
+        <h2>A career built by <span class="gradient-text">connecting worlds.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <article class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="year">2016 — 2018</div>
+          <h3>Smart Schools & Networks</h3>
+          <p>FSR Co · Network administration, CCTV installation and smart-school systems.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="year">2018 — 2019</div>
+          <h3>Embedded Developer</h3>
+          <p>MPC · C programming, electronics and embedded-system development.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="year">2019 — 2022</div>
+          <h3>Embedded Developer</h3>
+          <p>Iran SMPS · Embedded development and technical projects.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="year">2022 — 2024</div>
+          <h3>Accounting</h3>
+          <p>Sakab Investment · Accounting and financial operations.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="year">2024 — 2025</div>
+          <h3>Human Resources Specialist</h3>
+          <p>Sakab Investment · HR operations and people-related processes.</p>
+        </article>
+
+        <article class="timeline-item reveal current">
+          <div class="dot"></div>
+          <div class="year">2025 — Present</div>
+          <h3>Human Resources Manager</h3>
+          <p>Arzeshmandegar · HR management and organizational operations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span></span> SKILLS & EXPERTISE</div>
+        <h2>One profile. <span class="gradient-text">Four dimensions.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-panel glass reveal">
+          <div class="skill-top"><span>01</span><h3>Technology & Development</h3></div>
+          <p>Embedded systems, low-level thinking and technical problem solving.</p>
+          <div class="chips"><span>C</span><span>Embedded Systems</span><span>Electronics</span><span>VS Code</span></div>
+        </article>
+
+        <article class="skill-panel glass reveal">
+          <div class="skill-top"><span>02</span><h3>Finance & Data</h3></div>
+          <p>Understanding numbers as part of the business system, not in isolation.</p>
+          <div class="chips"><span>Accounting</span><span>Financial Analysis</span><span>Budgeting</span><span>Data</span></div>
+        </article>
+
+        <article class="skill-panel glass reveal">
+          <div class="skill-top"><span>03</span><h3>People & HR</h3></div>
+          <p>Designing better employee experiences and more effective HR operations.</p>
+          <div class="chips"><span>HR Management</span><span>People Ops</span><span>Recruitment</span><span>Talent</span></div>
+        </article>
+
+        <article class="skill-panel glass reveal">
+          <div class="skill-top"><span>04</span><h3>Operations & Management</h3></div>
+          <p>Connecting people, process and execution across organizational functions.</p>
+          <div class="chips"><span>Process Improvement</span><span>Administration</span><span>Coordination</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span></span> EXPERIENCE</div>
+        <h2>Built across <span class="gradient-text">different systems.</span></h2>
+      </div>
+
+      <div class="experience-list">
+        <article class="exp-row reveal">
+          <div class="exp-index">01</div>
+          <div><strong>Arzeshmandegar</strong><span>Human Resources Manager</span></div>
+          <div class="exp-date">Jul 2025 — Present</div>
+        </article>
+        <article class="exp-row reveal">
+          <div class="exp-index">02</div>
+          <div><strong>Sakab Investment</strong><span>HR Specialist · Accountant</span></div>
+          <div class="exp-date">Aug 2022 — Aug 2025</div>
+        </article>
+        <article class="exp-row reveal">
+          <div class="exp-index">03</div>
+          <div><strong>Iran SMPS</strong><span>Embedded Developer</span></div>
+          <div class="exp-date">Jul 2019 — Aug 2022</div>
+        </article>
+        <article class="exp-row reveal">
+          <div class="exp-index">04</div>
+          <div><strong>MPC</strong><span>Embedded Developer</span></div>
+          <div class="exp-date">Jul 2018 — Jul 2019</div>
+        </article>
+        <article class="exp-row reveal">
+          <div class="exp-index">05</div>
+          <div><strong>FSR Co</strong><span>Smart Schools & Networks</span></div>
+          <div class="exp-date">Mar 2016 — Jul 2018</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="contact-card glass reveal">
+        <div>
+          <div class="eyebrow"><span></span> LET'S CONNECT</div>
+          <h2>Interested in building<br><span class="gradient-text">something meaningful?</span></h2>
+          <p>Technology, people, operations, organizational development — or a mix of all four.</p>
+        </div>
+        <a class="btn primary big" href="https://www.linkedin.com/in/hossein-asghari-6386b02a6/" target="_blank" rel="noopener">
+          Connect on LinkedIn ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Hossein Asghari</span>
+    <span>Technology × Finance × People</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
